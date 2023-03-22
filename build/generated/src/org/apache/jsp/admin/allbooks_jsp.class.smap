@@ -1,0 +1,18 @@
+SMAP
+allbooks_jsp.java
+JSP
+*S JSP
+*F
++ 0 allbooks.jsp
+admin/allbooks.jsp
++ 1 allCss.jsp
+admin/allCss.jsp
++ 2 home_1.jsp
+admin/home_1.jsp
+*L
+5,9:50
+1#1,22:59
+13#0,4:81
+1#2,40:85
+16#0,56:125
+*E
