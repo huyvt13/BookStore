@@ -137,22 +137,32 @@
         <div class="container" >
             <h3 class="text-center">OLd Book </h3>
             <div class="row">
+                  <%
+                 Dao dao3 =new Dao();
+                 List<BookDtls> list3=dao3.getOldBooks();
+                 for(BookDtls b:list3) {
+                %>
                 <div class="col-md-3">
                     <div class="card crd-ho">
                         <div class="card-body text-center">
-                            <img alt="" src="book/book.jpg" style="width:200px;height:200px"
+                            <img alt="" src="book/<%=b.getPhotoName()%>" style="width:200px;height:200px"
                                  class="img-thumblin"> 
-                            <p>dac nhan tam<p>
-                            <p>How to win friends &influence Pepple<p>
-                            <p>Categories:New</p>
-                            <div class="row text-center">
-
+                            <p><%=b.getBookName()%><p>
+                            <p><%=b.getAuthor()%><p>
+                             <p>Categories:<%=b.getBookCategory()%></p>
+                              <div class="row">
+                                
                                 <a href="" class="btn btn-success btn-sm ml-5">View Details</a><!-- comment -->
-                                <a href="" class="btn btn-danger btn-sm ml-1">100</a>
+                                <a href="" class="btn btn-danger btn-sm ml-1"><%=b.getPrice()%></a>
                             </div>
+                           
+
                         </div>
                     </div>
                 </div>
+                <%  
+                  }
+                %>
 
                 
 
